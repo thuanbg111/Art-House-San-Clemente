@@ -1,0 +1,25 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><title>Programs — Art House San Clemente</title><link rel='stylesheet' href='assets/styles.css'/><link rel='icon' href='images/logo.png'></head><body><header class="header"><div class="container nav">
+  <a class="brand" href="index.html" aria-label="Home"><img src="images/logo.png" alt="Art House San Clemente logo"></a>
+  <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="links" aria-label="Main">
+    <a href="about.html">About</a>
+    <a href="programs.html">Programs</a>
+    <a href="governance.html">Governance</a>
+    <a href="contact.html" class="btn btn-primary">Contact</a>
+  </nav></div></header><main class='section container'><h1>Programs</h1><div class='grid-3'>
+  <article class='card'><img src='images/workshops.jpg' alt='Workshops'><div class='card-body'><h3>Workshops &amp; Classes</h3><p>Accessible art making for every age—weekend and evening sessions available.</p></div></article>
+  <article class='card'><img src='images/gallery.jpg' alt='Community Gallery'><div class='card-body'><h3>Community Gallery</h3><p>Rotating exhibits that showcase emerging and established artists across San Clemente.</p></div></article>
+  <article class='card'><img src='images/community.jpg' alt='Public Art & Events'><div class='card-body'><h3>Public Art &amp; Events</h3><p>Mural projects, youth showcases, and open‑studio nights that foster collaboration.</p></div></article>
+</div></main><footer class="footer"><div class="container grid">
+  <div><img src="images/logo.png" alt="" style="width:160px;height:auto;margin-bottom:.5rem;">
+    <div class="small">© <span id="year"></span> Art House San Clemente</div>
+    <div class="small">California Nonprofit Public Benefit • 501(c)(3) • EIN 86-1437103</div></div>
+  <div><div class="small"><strong>Mission:</strong><br>We provide an atmosphere of creativity and collaboration between residents and the broader community of San Clemente.</div></div>
+  <div><div class="small"><strong>Address:</strong><br>2911 La Ventana<br>San Clemente, CA 92672<br>
+    <strong>Email:</strong> <a href="mailto:contact@arthousesanclemente.online">contact@arthousesanclemente.online</a><br><strong>Phone:</strong> <a href="tel:+13189172399">+1 318-917-2399</a></div></div>
+</div></footer>
+<script>
+ const b=document.querySelector('.menu-toggle'),l=document.querySelector('.links');
+ if(b&&l){b.addEventListener('click',()=>{const o=getComputedStyle(l).display==='flex';l.style.display=o?'none':'flex';b.setAttribute('aria-expanded',o?'false':'true');});}
+ const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script></body></html>
